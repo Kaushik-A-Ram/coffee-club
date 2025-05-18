@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Allow all web crawlers to access everything
+# Add Disallow: /path/ to block specific folders or files
