@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.css" />
-    <meta name="google-site-verification" content="hGjMAqwgIs1AVICrSqmHFzx2mmnTJe27ne2G9ft3sBU" />
+    <meta
+      name="google-site-verification"
+      content="hGjMAqwgIs1AVICrSqmHFzx2mmnTJe27ne2G9ft3sBU"
+    />
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <title>Kaushik's Coffee Club</title>
   </head>
   <body>
@@ -95,17 +103,90 @@
     <!-- testimonials -->
     <section class="p-5 bg-secondary text-light">
       <div class="container">
-        <div class="row text-center"></div>
-        <div class="col-md">
-          <div class="card bg-light text-dark">
-            <div class="card-body text-center">
-              <i class="bi bi-laptop"></i>
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h1>★★★★★</h1>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light mb-3">
+              <div class="card-body text-center">
+                <h3 class="card-title">Bob</h3>
+                <p class="card-text">
+                  Great coffee, great service! I love the variety of blends they
+                  offer. The staff is always friendly and helpful. Highly
+                  recommend!
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-md">123</div>
-          <div class="col-md">123</div>
+          <div class="col-md">
+            <div class="card bg-dark text-light mb-3">
+              <div class="card-body text-center">
+                <h3 class="card-title">Alice</h3>
+                <p class="card-text">
+                  The ambiance is perfect for relaxing or working. The pastries
+                  are delicious too! I always find myself coming back for more.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light mb-3">
+              <div class="card-body text-center">
+                <h3 class="card-title">John</h3>
+                <p class="card-text">
+                  Fast service and amazing coffee. I come here every morning!
+                  The baristas are knowledgeable, thanks guys I will be back.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- contant and map -->
+    <section class="p-5 bg-secondary text-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Where to find us</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span>
+                125 lonsdale street, Melbourne Australia
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span>
+                0999999999
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span>
+                info@kaushikcoffeeclub.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map" style="width: 400px; height: 300px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="p-5 bg-primary text-black text-center border">
+      <div class="container">
+        <p class="lead">© 2023 Kaushik's Coffee Club. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoia2F1c2hpa3JhbTIwMjUiLCJhIjoiY21hdGF3YjljMHY4MDJqb2U0eHp2b2EzeSJ9.GqP5plVn03RuWzRH-zmiIQ";
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/streets-v12", // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9, // starting zoom
+        center: [144.9631, -37.8136], // starting position [lng, lat]
+      });
+    </script>
   </body>
 </html>
