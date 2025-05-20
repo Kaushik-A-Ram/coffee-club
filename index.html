@@ -7,11 +7,6 @@
      <meta name="keywords" content="JavaScript, HTML, CSS, Bootstrap, Holmesglen Institute, Kaushik, Tafe, Website" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.css" />
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
     <title>Kaushik's Coffee Club</title>
   </head>
   <!-- Google tag (gtag.js) -->
@@ -178,9 +173,6 @@
               </li>
             </ul>
           </div>
-          <div class="col-md">
-            <div id="map" style="width: 400px; height: 300px"></div>
-          </div>
         </div>
       </div>
     </section>
@@ -189,16 +181,5 @@
         <p class="lead">© 2023 Kaushik's Coffee Club. All rights reserved.</p>
       </div>
     </footer>
-    <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1Ijoia2F1c2hpa3JhbTIwMjUiLCJhIjoiY21hdGF3YjljMHY4MDJqb2U0eHp2b2EzeSJ9.GqP5plVn03RuWzRH-zmiIQ";
-      const map = new mapboxgl.Map({
-        container: "map", // container ID
-        style: "mapbox://styles/mapbox/streets-v12", // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9, // starting zoom
-        center: [144.9631, -37.8136], // starting position [lng, lat]
-      });
-    </script>
   </body>
 </html>
