@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kaushik's Coffee Club" />
+     <meta name="keywords" content="JavaScript, HTML, CSS, Bootstrap, Holmesglen Institute, Kaushik, Tafe, Website" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Kaushik's Coffee Club</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CFFHQKX7KB"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-CFFHQKX7KB");
+  </script>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light border">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            src="./images/coffeelogo.webp"
+            alt="coffee logo"
+            class="logo"
+            width="40px"
+          />
+          <strong>Kaushiks Coffee Club</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link fw-bold">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link fw-bold">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link fw-bold">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="p-5 bg-secondary text-light">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning w-100">Send</button>
+            </form>
+          </div>
+          <div class="col-md">
+            <h2 class="text-center mb-4">Find Us on Map</h2>
+            <div class="ratio ratio-4x3 mb-4">
+              <iframe
+                src="https://www.google.com/maps?q=125+lonsdale+street,+Dandenong+Melbourne+Australia&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="p-5 bg-primary text-black text-center border">
+      <div class="container">
+        <p class="lead">© 2023 Kaushik's Coffee Club. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
